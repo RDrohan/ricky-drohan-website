@@ -11,9 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <div className="max-w-[85rem] w-full mx-auto pt-4 px-4 sm:flex sm:items-center sm:justify-between">
-          {children}
-        </div>
+        <div className="w-full h-full mx-auto">{children}</div>
       </body>
       <PrelineScript />
     </html>
