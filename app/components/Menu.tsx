@@ -33,7 +33,7 @@ export default function Menu() {
       title: "Contacts",
       description: "Getting in touch is easy!",
       callToAction: "Contact Me",
-      link: "",
+      link: "/contact",
     },
   ];
 
