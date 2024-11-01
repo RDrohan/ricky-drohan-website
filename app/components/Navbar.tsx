@@ -1,15 +1,19 @@
+import { RxHamburgerMenu } from "react-icons/rx";
+import { TbXboxX } from "react-icons/tb";
+
+import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="sticky top-0 inset-x-0 z-50 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 dark:bg-neutral-800">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
-          <a
+          <Link
             className="flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80"
-            href="#"
+            href="/"
             aria-label="Brand"
           >
             Ricky Drohan
-          </a>
+          </Link>
           <div className="sm:hidden">
             <button
               type="button"
@@ -20,37 +24,8 @@ export default function Navbar() {
               aria-label="Toggle navigation"
               data-hs-collapse="#hs-navbar-example"
             >
-              <svg
-                className="hs-collapse-open:hidden shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="3" x2="21" y1="6" y2="6" />
-                <line x1="3" x2="21" y1="12" y2="12" />
-                <line x1="3" x2="21" y1="18" y2="18" />
-              </svg>
-              <svg
-                className="hs-collapse-open:block hidden shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M18 6 6 18" />
-                <path d="m6 6 12 12" />
-              </svg>
+              <RxHamburgerMenu className="hs-collapse-open:hidden shrink-0 size-4" />
+              <TbXboxX className="hs-collapse-open:block hidden shrink-0 size-4" />
               <span className="sr-only">Toggle navigation</span>
             </button>
           </div>
@@ -61,31 +36,31 @@ export default function Navbar() {
           aria-labelledby="hs-navbar-example-collapse"
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-            <a
+            <Link
               className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-              href="#"
+              href="/about"
               aria-current="page"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
               href="#"
             >
               Technologies
-            </a>
-            <a
+            </Link>
+            <Link
               className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
               href="#"
             >
               Project
-            </a>
-            <a
+            </Link>
+            <Link
               className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
               href="#"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
