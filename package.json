@@ -1,7 +1,7 @@
 {
   "name": "ricky-drohan-website",
   "version": "1.0.0",
-  "description": "Personal website made using Next.js and Tailwind",
+  "description": "Personal website made using Next.js, Tailwind and Preline served on Vercel",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
