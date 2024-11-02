@@ -36,14 +36,7 @@ export default function Technologies() {
       title: "CSS Frameworks",
       description:
         "I worked with various CSS frameworks during my time at the Walton Institute along with continued independent learning outside of work.",
-      tools: [
-        "Tailwind CSS",
-        "Preline",
-        "DaisyUI",
-        "Semantic UI",
-        "Bootstrap",
-        "Angular Material",
-      ],
+      tools: ["Tailwind CSS", "Preline", "DaisyUI", "shadcn-ui"],
     },
     {
       icon: <IoLogoJavascript size={48} />,
@@ -51,14 +44,16 @@ export default function Technologies() {
       description:
         "Most of my full-stack development experience is in JavaScript and I have worked on many frameworks both professionally and in my own time.",
       tools: [
-        "Next.js",
         "Angular 1.x",
         "Angular 2+",
         "React",
+        "Next.js",
         "Vue.js",
+        "Svelte",
         "Node.js",
         "Express.js",
         "Svelte",
+        "jQuery",
       ],
     },
     {
