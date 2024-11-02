@@ -22,7 +22,7 @@ export default function Menu() {
       title: "Technologies",
       description: `See what languages and frameworks I've worked with since 2015.`,
       callToAction: "See My Skills",
-      link: "",
+      link: "/technologies",
     },
     {
       icon: <FaFolderTree size={48} />,

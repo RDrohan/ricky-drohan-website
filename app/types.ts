@@ -6,6 +6,17 @@ export type Item = {
   link: string;
 };
 
+export type Technology = {
+  icon: any;
+  title: string;
+  description: string;
+  tools: string[];
+};
+
 export type MenuItemProps = {
   item: Item;
+};
+
+export type TechnologyItemProps = {
+  item: Technology;
 };
