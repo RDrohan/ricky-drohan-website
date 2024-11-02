@@ -13,6 +13,13 @@ export type Technology = {
   tools: string[];
 };
 
+export type GithubRepo = {
+  name: string;
+  url: string;
+  description: string;
+  language: string;
+};
+
 export type MenuItemProps = {
   item: Item;
 };

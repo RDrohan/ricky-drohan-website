@@ -29,7 +29,7 @@ export default function Menu() {
       title: "Projects",
       description: `Here's my projects I work on to keep my skills fresh.`,
       callToAction: "See My Projects",
-      link: "",
+      link: "/projects",
     },
     {
       icon: <GrContact size={48} />,
