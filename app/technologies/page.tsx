@@ -3,10 +3,16 @@ import { FaDatabase } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaPython } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
 
 import { Technology } from "../types";
 import TechnologyItem from "../components/TechnologyItem";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Technologies",
+};
 export default function Technologies() {
   const technologies: Technology[] = [
     {
@@ -62,6 +68,27 @@ export default function Technologies() {
       description:
         "I have commercial experience with Python through developing a SDN web application.",
       tools: ["Django", "Beautiful Soup"],
+    },
+    {
+      icon: <FaTools size={48} />,
+      title: "Development Tools",
+      description:
+        "I have extensive experience with various development tools and I am always learning new ones.",
+      tools: [
+        "SSMS",
+        "SSIS",
+        "SSRS",
+        "Power Apps",
+        "Power Automate",
+        "Movex",
+        "MPower",
+        "IBM Sterling B2Bi",
+        "MS Visual Studio",
+        "VS Code",
+        "Git",
+        "Docker",
+        "Crystal Reports",
+      ],
     },
   ];
 

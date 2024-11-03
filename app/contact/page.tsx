@@ -4,6 +4,12 @@ import { FaPhone } from "react-icons/fa6";
 
 import Image from "next/image";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
+
 export default function Contact() {
   return (
     <div className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">

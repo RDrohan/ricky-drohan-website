@@ -5,6 +5,11 @@ import { useEffect, useState } from "react";
 
 import { GithubRepo } from "../types";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+};
 export default function Projects() {
   const [projects, setProjects] = useState<GithubRepo[]>([]);
 
