@@ -10,7 +10,8 @@ export const metadata: Metadata = {
     template: "%s | Ricky Drohan",
     default: "Main | Ricky Drohan",
   },
-  description: "My personal website made with NextJS, Tailwind and Preline",
+  description:
+    "Ricky Drohan is an experienced developer in system support, BI, SQL, and web development. Skilled in data analysis, JavaScript, Python, and more.",
 };
 export default function RootLayout({
   children,
