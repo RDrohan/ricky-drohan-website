@@ -2,7 +2,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { FaPhone } from "react-icons/fa6";
 
-import Image from "next/image";
+import Form from "../components/Form";
 
 import type { Metadata } from "next";
 
@@ -21,14 +21,8 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-6 md:gap-8 lg:gap-12">
-          <div className="aspect-w-16 aspect-h-6 lg:aspect-h-14 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
-            <Image
-              className="object-cover rounded-2xl"
-              width={1920}
-              height={1080}
-              src="/waterford.jpg"
-              alt="Contacts Image"
-            />
+          <div className="space-y-8 lg:space-y-16">
+            <Form />
           </div>
 
           <div className="space-y-8 lg:space-y-16">

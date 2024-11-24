@@ -4,6 +4,7 @@ import PrelineScript from "./components/PrelineScript";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import type { Metadata } from "next";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: {
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
+        <Toaster position="top-center" />
         <div className="w-full h-full mx-auto">{children}</div>
         <Footer />
       </body>
