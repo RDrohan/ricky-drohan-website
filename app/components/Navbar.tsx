@@ -62,14 +62,6 @@ export default function Navbar() {
             >
               Contact
             </Link>
-            <div>
-              <Link
-                className="group inline-flex items-center gap-x-2 py-2 px-3 font-bold text-sm text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-                href="/CV - Ricky Drohan.pdf"
-              >
-                <FaFileDownload /> Download CV
-              </Link>
-            </div>
           </div>
         </div>
       </nav>
