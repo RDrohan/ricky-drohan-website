@@ -21,7 +21,7 @@ export default function Hero() {
             </div>
             <div className="mt-5 max-w-3xl">
               <p className="text-lg text-black dark:text-neutral-400">
-                With 8+ years in full-stack development and data management, I
+                With 10+ years in consulting, full-stack development, data management, I
                 build reliable, scalable solutions tailored to meet your
                 needs—delivering high-quality code, custom applications, and
                 impactful web solutions.

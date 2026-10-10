@@ -1,6 +1,5 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TbXboxX } from "react-icons/tb";
-import { FaFileDownload } from "react-icons/fa";
 
 import Link from "next/link";
 export default function Navbar() {
