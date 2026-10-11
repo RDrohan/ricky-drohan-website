@@ -99,7 +99,7 @@ export default function Technologies() {
           Technologies
         </h2>
         <p className="mt-1 text-gray-600 dark:text-neutral-400">
-          I have over 8 years experience in full-stack, database and Business
+          I have over 10 years experience in full-stack, database and Business
           Intelligence (BI) development. Over that time, I worked with many
           frameworks and languages, all of which are detailed below!
         </p>

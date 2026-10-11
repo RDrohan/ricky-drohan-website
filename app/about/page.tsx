@@ -30,23 +30,29 @@ export default function About() {
             Ricky Drohan
           </h1>
           <p className="text-sm text-gray-600 dark:text-neutral-400">
-            Business Intelligence Developer &amp; Software Engineer
+            Data Consultant &amp; Business Intelligence Developer &amp; Software Engineer
           </p>
         </div>
       </div>
       <div className="mt-8">
         <p className="text-md text-gray-600 dark:text-neutral-400">
-          With over eight years of experience as a dedicated and versatile
-          developer, I bring a strong track record in supporting and enhancing
-          complex systems across multiple sites at Dawn Meats in Waterford. In
-          my current role, I leverage a diverse tech stack to drive projects in
+          With over ten years of experience as a dedicated and versatile
+          developer, I am now a Data Consultant. In my current role, I analyse customer requirements and deliver secure, 
+          scalable integrations such as SSO, SAML, VPN and API connections. 
+          I guide organisations through EVO migrations, helping them adopt a unified, 
+          AI‑powered platform. I also develop and test SQL queries and API interfaces to maintain strong data quality.
+        </p>
+
+        <p className="text-md text-gray-600 dark:text-neutral-400">
+          Previously, I leveraged a diverse tech stack to drive projects in
           business intelligence, database management, and web development, all
-          tailored to meet the needs of the Dawn Meats Group. My work emphasizes
+          tailored to meet the needs of the Dawn Meats Group, supporting and enhancing
+          complex systems across multiple sites at Dawn Meats in Waterford. My work emphasizes
           quality, adaptability, and a commitment to continuous improvement.
         </p>
 
         <p className="mt-6 text-md text-gray-600 dark:text-neutral-400">
-          Previously, I contributed significantly to SE2, where I joined as an
+          Before Dawn, I contributed significantly to SE2, where I joined as an
           Analyst in 2017. My role involved developing SQL scripts to analyze
           and manage data in client databases, generating reports, and crafting
           solutions to streamline client data operations.
