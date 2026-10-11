@@ -1,5 +1,7 @@
+import type { ReactNode } from "react";
+
 export type Item = {
-  icon: any;
+  icon: ReactNode;
   title: string;
   description: string;
   callToAction: string;
@@ -7,7 +9,7 @@ export type Item = {
 };
 
 export type Technology = {
-  icon: any;
+  icon: ReactNode;
   title: string;
   description: string;
   tools: string[];
@@ -16,8 +18,8 @@ export type Technology = {
 export type GithubRepo = {
   name: string;
   url: string;
-  description: string;
-  language: string;
+  description: string | null;
+  language: string | null;
 };
 
 export type MenuItemProps = {

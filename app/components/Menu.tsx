@@ -1,11 +1,10 @@
 import { FaUser } from "react-icons/fa";
-import { FaComputer } from "react-icons/fa6";
-import { FaFolderTree } from "react-icons/fa6";
+import { FaComputer, FaFolderTree } from "react-icons/fa6";
 import { GrContact } from "react-icons/gr";
 
 import MenuItem from "./MenuItem";
 
-import { Item } from "../types";
+import type { Item } from "../types";
 
 export default function Menu() {
   const menuItems: Item[] = [
@@ -48,8 +47,8 @@ export default function Menu() {
         </h2>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
-        {menuItems.map((item, index) => (
-          <MenuItem key={index} item={item} />
+        {menuItems.map((item) => (
+          <MenuItem key={item.title} item={item} />
         ))}
       </div>
     </div>

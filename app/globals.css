@@ -1,3 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Preline UI */
+@import "preline/variants.css";
+@source "../node_modules/preline/dist/*.js";
+
+/* Optional Preline themes (semantic colour tokens). This site uses plain Tailwind utilities, so it is off. */
+/* @import "preline/theme.css"; */
+
+/* Preline form components rely on the Tailwind Forms plugin */
+@plugin "@tailwindcss/forms";
+
+/* Keep the class-based dark mode the site used with Tailwind 3 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Preline's optional defaults that shipped with Tailwind 3 */
+@custom-variant hover (&:hover);
+
+@layer base {
+  /* Tailwind 4 defaults borders to currentColor; restore the Tailwind 3 default */
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

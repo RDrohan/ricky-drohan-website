@@ -40,7 +40,7 @@ export default function Contact() {
                       Ireland
                     </p>
                     <address className="mt-1 text-black not-italic dark:text-white">
-                      2 Estuary Wood, Ferrybank, Waterford, X91KXV3
+                      34 Mallfield, Thomastown, Co. Kilkenny, R95 DD83
                     </address>
                   </div>
                 </div>
@@ -62,7 +62,7 @@ export default function Contact() {
                     </p>
                     <p>
                       <a
-                        className="relative inline-block font-medium text-black focus:outline-none focus:before:bg-black dark:text-white"
+                        className="relative inline-block font-medium text-black focus:outline-hidden focus:before:bg-black dark:text-white"
                         href="mailto:rdrohanirl@yahoo.ie"
                       >
                         rdrohanirl@yahoo.ie
@@ -80,7 +80,7 @@ export default function Contact() {
                     </p>
                     <p>
                       <a
-                        className="relative inline-block font-medium text-black focus:outline-none focus:before:bg-black dark:text-white"
+                        className="relative inline-block font-medium text-black focus:outline-hidden focus:before:bg-black dark:text-white"
                         href="tel:+353879124961"
                       >
                         +353 87 9124961

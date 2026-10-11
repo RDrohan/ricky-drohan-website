@@ -1,7 +1,9 @@
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-
 import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
+const socialClasses =
+  "size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700";
+
 export default function Footer() {
   const currentYear: number = new Date().getFullYear();
 
@@ -25,18 +27,24 @@ export default function Footer() {
         </div>
 
         <div className="mt-3 space-x-2">
-          <Link
-            className="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+          <a
+            className={socialClasses}
             href="https://www.linkedin.com/in/rickydrohan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <FaLinkedin />
-          </Link>
-          <Link
-            className="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+          </a>
+          <a
+            className={socialClasses}
             href="https://www.github.com/RDrohan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <FaGithub />
-          </Link>
+          </a>
         </div>
       </div>
     </footer>

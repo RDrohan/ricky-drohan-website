@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects",
 };
+
 export default function Projects() {
   return (
     <div className="max-w-[85rem] p-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">

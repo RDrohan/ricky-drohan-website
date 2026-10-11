@@ -1,4 +1,4 @@
-import { TechnologyItemProps } from "../types";
+import type { TechnologyItemProps } from "../types";
 
 export default function TechnologyItem({ item }: TechnologyItemProps) {
   return (
@@ -15,16 +15,16 @@ export default function TechnologyItem({ item }: TechnologyItemProps) {
       <p className="mt-3 text-gray-500 dark:text-neutral-500">
         {item.description}
       </p>
-      <p className="mt-3 text-gray-500 dark:text-neutral-500">
-        {item.tools.map((tool, index) => (
+      <div className="mt-3 text-gray-500 dark:text-neutral-500">
+        {item.tools.map((tool) => (
           <span
-            key={index}
-            className="inline-flex items-center gap-x-1.5 py-1.5 p-3 mb-2 mr-1 rounded-full text-xs font-medium border border-gray-800 text-gray-800 dark:border-neutral-200 dark:text-white"
+            key={tool}
+            className="inline-flex items-center gap-x-1.5 py-1.5 px-3 mb-2 mr-1 rounded-full text-xs font-medium border border-gray-800 text-gray-800 dark:border-neutral-200 dark:text-white"
           >
             {tool}
           </span>
         ))}
-      </p>
+      </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaPython } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
 
-import { Technology } from "../types";
+import type { Technology } from "../types";
 import TechnologyItem from "../components/TechnologyItem";
 
 import type { Metadata } from "next";
@@ -58,7 +58,6 @@ export default function Technologies() {
         "Svelte",
         "Node.js",
         "Express.js",
-        "Svelte",
         "jQuery",
       ],
     },
@@ -99,15 +98,15 @@ export default function Technologies() {
           Technologies
         </h2>
         <p className="mt-1 text-gray-600 dark:text-neutral-400">
-          I have over 10 years experience in full-stack, database and Business
+          I have over 10 years experience in consulting, full-stack, database and Business
           Intelligence (BI) development. Over that time, I worked with many
           frameworks and languages, all of which are detailed below!
         </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {technologies.map((item, index) => (
-          <TechnologyItem key={index} item={item} />
+        {technologies.map((item) => (
+          <TechnologyItem key={item.title} item={item} />
         ))}
       </div>
     </div>
